@@ -1,6 +1,6 @@
 # Dino Game - DIO
 
-<p> Recriando o jogo do Google Chrome: o jogo do Dinossaurao </p>
+<p> Recriando o jogo do Google Chrome: o jogo do Dinossauro </p>
 
 ## Tela do Jogo
 ![image](https://user-images.githubusercontent.com/64391583/103502784-1b1a3b00-4e31-11eb-943f-c3a428c08af1.png)
