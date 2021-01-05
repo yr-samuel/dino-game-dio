@@ -1,7 +1,11 @@
 const dino = document.querySelector('.dino');
 const background = document.querySelector('.background');
+
+
 let isJumping = false;
 let position = 0;
+
+
 
 function handleSpacePress(event){
     if(event.code === "Space"){
@@ -9,9 +13,10 @@ function handleSpacePress(event){
     }
 }
 
+
 function jump (){
-    
     isJumping = true;
+    
     let upInterval = setInterval(() => {
         if(position >= 150){
             clearInterval(upInterval);
@@ -47,6 +52,13 @@ function createCactus(){
         }else if(cactusPosition > 0 && cactusPosition < 60 && position < 60){
             clearInterval(leftInterval);
             document.body.innerHTML = '<h1 class="game-over">Fim de Jogo</h1>';
+            document.body.innerHTML += '<button class="reiniciar">Reiniciar</button>'
+
+            const botao = document.querySelector('.reiniciar');
+
+            botao.addEventListener("click", () => {
+                this.location.reload()
+            })
         }else{
             cactusPosition -= 10;
             cactus.style.left = cactusPosition + 'px';
